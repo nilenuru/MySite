@@ -1,16 +1,17 @@
 <div class="header">
   <div class="header__wrapper">
+      <div class="header__ava">
+          <img class="header__img" src="img/jpg/avatar.jpg" alt="">
+      </div>
     <h1 class="header__title">Hello, my name is Alex and&nbsp;i create cool websites</h1>
     <p class="header__desk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
       ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
     <a href="#" class="button">hire me</a>
-    <a href="#" class="arrow__link">
-      <img src="img/svg/download.svg" width="19" height="30" alt="">
-    </a>
+    <a href="#about" class="header__link"></a>
   </div>
 </div>
-<div class="about">
+<div   id="about" class="about">
   <div class="about__wrap">
     <h2 class="about__title">About Me</h2>
     <p class="about__desk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -25,17 +26,20 @@
   <h2 class="expert__title">Expert In</h2>
   <div class="expert__wrap">
     <ul class="expert__list">
-      <li class="expert__item expert__item--mobile">
-        <h3>MOBILE APP DESIGN</h3>    
+      <li class="expert__item">
+        <div class="expert__mobile"></div>
+        <h3>MOBILE APP DESIGN</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua. Ut enim ad </p>
       </li>
-      <li class="expert__item expert__item--notebook">
+      <li class="expert__item">
+        <div class="expert__notebook"></div>
         <h3>WEB DESIGN</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua.</p>
       </li>
-      <li class="expert__item expert__item--development">
+      <li class="expert__item">
+        <div class="expert__development"></div>
         <h3>WEB DEVELOPMENT</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua. Ut enim ad </p>
@@ -48,9 +52,16 @@
     Latest Works
   </h2>
   <div class="work__wrap">
-    <img class="work__img" src="img/jpg/photo-1.jpg" alt="">
-    <img class="work__img" src="img/jpg/photo-2.jpg" alt="">
-    <img class="work__img" src="img/jpg/photo-3.jpg" alt="">
+    <div class="work__thumb">
+      <img class="work__img" src="img/jpg/photo-1.jpg" alt="">
+    </div>
+    <div class="work__thumb">
+        <img class="work__img" src="img/jpg/nature.jpg" alt="">
+    </div>
+    <div class="work__thumb">
+        <img class="work__img" src="img/jpg/photo-3.jpg" alt="">
+    </div>
+    
   </div>
 </div>
 
@@ -58,5 +69,5 @@
   <div class="footer__wrap">
     <h2 class="footer__title">Need a web developer? <span class="span"> Ready to work!</span>
     </h2>
-    <a href="#" class="button footer__btn">hire me</a>
+    <div><a href="#" class="button footer__btn">hire me</a></div>
   </div>
