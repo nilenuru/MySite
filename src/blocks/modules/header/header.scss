@@ -180,58 +180,72 @@ a.button:hover {
   }
 
 
-  .expert__notebook p {
-    max-width: 321px;
-    margin: 0 auto;
-  }
-
-
-  &__mobile {
-    margin: 0 auto;
-    background-image: url("../img/jpg/mobile.png");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border: 3px solid #17528e;
-    width: 140px;
-    height: 140px;
-    border: 2px solid #17528e;
-    border-radius: 100%;
-
-  }
-
-  &__mobile:hover {
-    background-color: #17528e;
-  }
-
-  &__notebook {
-    max-width: 300px;
-    margin: 0 auto;
-    background-image: url("../img/jpg/notebook.png");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    width: 140px;
-    height: 140px;
-    border: 2px solid #17528e;
-    border-radius: 100%;
-
-  }
-
-  p.not__desk {
+  .not-dsk {
     max-width: 315px;
+    margin: 0 auto;
   }
 
-  &__development {
+
+  &__icon {
     margin: 0 auto;
-    background-image: url("../img/jpg/development.png");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: #17528e;
     width: 140px;
     height: 140px;
     border: 2px solid #17528e;
     border-radius: 100%;
+    position: relative;
   }
 
+  &__icon::after {
+    content: '';
+    background-image: url("../img/jpg/sprite.png");
+    position: absolute;
+  }
+
+  &__icon:hover {
+    background-color: #17528e;
+  }
+
+  &__icon--app::after {
+      width: 47px;
+      height: 67px;
+      background-position: -9px -14px;
+      top: calc(50% - 33px);
+      left: 0;
+      right: 0;
+      margin: 0 auto;  
+  }
+
+  &__icon--app:hover::after {
+    background-position: -10px -99px;
+  }
+  
+
+  &__icon--notebook::after {
+    width: 72px;
+    height: 58px;
+    background-position: -79px -14px;
+    top: calc(50% - 27px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;  
+}
+&__icon--notebook:hover::after {
+  background-position: -81px -100px;
+}
+
+&__icon--development::after {
+    width: 58px;
+    height: 66px;
+    background-position: -171px -11px;
+    top: calc(50% - 34px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;  
+  }
+
+  &__icon--development:hover::after {
+    background-position: -172px -96px;
+  }
 }
 
 .work {
@@ -270,9 +284,12 @@ a.button:hover {
     object-fit: cover;
     transform: translate(-50%, -50%);
     width: 359px;
-   
+
     padding-top: 271px;
   }
+  &__img:hover {
+    opacity: 0.5;
+}
 }
 
 .footer {
